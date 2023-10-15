@@ -13,11 +13,10 @@ int print_string(va_list argsList)
 	str = va_arg(argsList, char *);
 	if (str == NULL)
 	{
-		count += printf("(null)");
 	}
 	else
 	{
-		while (*str)
+		while (*str != '\0')
 		{
 			_putchar(*str);
 			str++;
