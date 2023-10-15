@@ -13,6 +13,7 @@ int print_string(va_list argsList)
 	str = va_arg(argsList, char *);
 	if (str == NULL)
 	{
+		return (-1);
 	}
 	else
 	{
