@@ -10,6 +10,7 @@ int print_char(va_list argsList)
 	int count;
 
 	count = 0;
-	count += _putchar(c);
+	if (c != '\0')
+		count += _putchar(c);
 	return (count);
 }
