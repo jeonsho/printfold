@@ -11,7 +11,7 @@ int print_char(va_list argsList)
 
 	count = 0;
 	c = va_arg(argsList, int);
-	if (c == '\0')
+	if (c == NULL)
 	{
 	}
 	else
