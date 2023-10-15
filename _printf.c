@@ -13,6 +13,10 @@ int _printf(const char *format, ...)
 	va_list argsList;
 	int count;
 
+	if (format == NULL)
+	{
+		return (0);
+	}
 	va_start(argsList, format);
 	count = 0;
 
