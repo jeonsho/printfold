@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 	va_list argsList;
 	int count;
 
-	if (*format == NULL)
+	if (format == NULL)
 	{
 		return (0);
 	}
