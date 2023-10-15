@@ -6,17 +6,10 @@
  */
 int print_char(va_list argsList)
 {
-	char c;
+	char c = va_arg(argsList, int);
 	int count;
 
 	count = 0;
-	c = va_arg(argsList, int);
-	if (c == '\0')
-	{
-	}
-	else
-	{
-		count += _putchar(c);
-	}
+	count += _putchar(c);
 	return (count);
 }
