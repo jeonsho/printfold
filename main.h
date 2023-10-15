@@ -3,6 +3,8 @@
 
 #include <stdio.h>
 #include <stdarg.h>
+#include <stddef.h>
+#include <unistd.h>
 int _putchar(char c);
 int _printf(const char *format, ...);
 int print_string(va_list argsList);
