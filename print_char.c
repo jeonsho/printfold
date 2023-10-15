@@ -9,5 +9,7 @@ int print_char(va_list argsList)
 	char c;
 
 	c = va_arg(argsList, int);
+	if (c != '\0')
+		return (0);
 	return (_putchar(c));
 }
