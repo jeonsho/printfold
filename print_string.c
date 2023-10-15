@@ -9,13 +9,20 @@ int print_string(va_list argsList)
 	char *str;
 	int count;
 
-	str = va_arg(argsList, char *);
 	count = 0;
-	while (*str != '\0')
+	str = va_arg(argsList, char *);
+	if (str == NULL)
 	{
-		_putchar(*str);
-		str++;
-		count++;
+		count += printf("(null)");
+	}
+	else
+	{
+		while (*str)
+		{
+			_putchar(*str);
+			str++;
+			count++;
+		}
 	}
 
 	return (count);
