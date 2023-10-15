@@ -7,10 +7,9 @@
 int print_string(va_list argsList)
 {
 	char *str;
-
-	str = va_arg(argsList, char *);
 	int count;
 
+	str = va_arg(argsList, char *);
 	count = 0;
 	while (*str)
 	{

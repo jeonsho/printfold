@@ -11,9 +11,10 @@
 int _printf(const char *format, ...)
 {
 	va_list argsList;
+	int count;
 
 	va_start(argsList, format);
-	int count = 0;
+	count = 0;
 
 	while (*format)
 	{
