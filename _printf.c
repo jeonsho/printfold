@@ -2,7 +2,6 @@
 /**
  *_printf - Print formatted output to the standard output.
  *@format: A format string that specifies how to format and print the data.
- *This function supports the following format specifiers:
  *- %c: Print a single character.
  *- %s: Print a null-terminated string.
  *- %%: Print a percent sign '%'.
@@ -13,13 +12,8 @@ int _printf(const char *format, ...)
 	va_list argsList;
 	int count;
 
-	if (format == NULL)
-	{
-		return (0);
-	}
 	va_start(argsList, format);
 	count = 0;
-
 	while (*format != '\0')
 	{
 		if (*format == '%')
