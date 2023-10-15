@@ -7,7 +7,16 @@
 int print_char(va_list argsList)
 {
 	char c;
+	int count;
 
+	count = 0;
 	c = va_arg(argsList, int);
-	return (_putchar(c));
+	if (c == '\0)
+	{
+	}
+	else
+	{
+		count += _putchar(c);
+	}
+	return (count);
 }
