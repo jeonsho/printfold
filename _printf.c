@@ -18,6 +18,7 @@ int _printf(const char *format, ...)
 	{
 		if (*format == '%')
 		{
+			count++;
 			format++;
 			switch (*format)
 			{
