@@ -14,6 +14,7 @@ int print_string(va_list argsList)
 	while (*str != '\0')
 	{
 		_putchar(*str);
+		str++;
 		count++;
 	}
 
