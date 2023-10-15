@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdarg.h>
 /**
  *print_string - Print a string.
  *@argsList: The string to be printed.
