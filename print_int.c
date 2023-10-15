@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-
+#include "main.h"
 /**
  *_simple_write - Writes a specified
  *@fd: The file descriptor
