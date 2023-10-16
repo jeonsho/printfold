@@ -5,11 +5,14 @@
 #include <stdarg.h>
 #include <stddef.h>
 #include <unistd.h>
+#include <stdlib.h>
 int _putchar(char c);
 int _printf(const char *format, ...);
 int print_string(va_list argsList);
 int print_char(va_list argsList);
-int print_int(va_list argsList);
-int _simple_write(int fd, const char *str, size_t len);
-char *itoa(int num);
+
+int absalute(int num);
+int printdigit(int num);
+int printinteger(int num);
+int print_int( va_list var);
 #endif
