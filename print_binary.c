@@ -13,7 +13,7 @@ int print_binary(va_list argsList)
 
 	num = va_arg(argsList, unsigned int);
 	count = 0;
-	if (num == NULL)
+	if (argsList == NULL)
 		return (-1);
 	if (num == 0)
 	{
