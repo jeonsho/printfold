@@ -18,6 +18,8 @@ int print_binary(va_list argsList)
 	}
 	count = 0;
 	num = va_arg(argsList, unsigned int);
+	 if (num < 0)
+        	return (-1);
 	if (num == 0)
 	{
 		putchar('0');
