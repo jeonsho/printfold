@@ -11,10 +11,10 @@ int print_binary(va_list argsList)
 	int binary[32];
 	int i;
 
-	num = va_arg(argsList, unsigned int);
-	count = 0;
 	if (argsList == NULL)
 		return (-1);
+	num = va_arg(argsList, unsigned int);
+	count = 0;
 	if (num == 0)
 	{
 		_putchar('0');
