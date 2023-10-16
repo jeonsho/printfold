@@ -7,7 +7,7 @@
  */
 int print_binary(va_list argsList)
 {
-	int num;
+	unsigned int num;
 	int count;
         int binary[32];
         int i;
@@ -17,9 +17,7 @@ int print_binary(va_list argsList)
 		return (0);
 	}
 	count = 0;
-	num = va_arg(argsList, int);
-	 if (num < 0)
-        	return (-1);
+	num = va_arg(argsList, unsigned int);
 	if (num == 0)
 	{
 		putchar('0');
