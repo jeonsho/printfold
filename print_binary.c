@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  *print_binary - Prints an unsigned integer in binary
  *@argsList: va_list containing the unsigned integer to print
@@ -6,30 +7,33 @@
  */
 int print_binary(va_list argsList)
 {
-	unsigned int num;
+	 unsigned int num;
 	int count;
-	int binary[32];
-	int i;
-
+        int binary[32];
+        int i;
+        int size;
 	if (argsList == NULL)
+	{
 		return (-1);
-	num = va_arg(argsList, unsigned int);
+	}
 	count = 0;
+	num = va_arg(argsList, unsigned int);
 	if (num == 0)
 	{
-		_putchar('0');
+		putchar('0');
 		return (1);
 	}
 
-	for (i = 0; num > 0; i++)
+	size = 0;
+	while (num > 0)
 	{
-		binary[i] = num % 2;
+		binary[size++] = num % 2;
 		num /= 2;
 	}
 
-	for (i = 31; i >= 0; i--)
+	for (i = size - 1; i >= 0; i--)
 	{
-		_putchar(binary[i] + '0');
+		putchar(binary[i] + '0');
 		count++;
 	}
 
