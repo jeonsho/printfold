@@ -14,7 +14,7 @@ int print_binary(va_list argsList)
         int size;
 	if (argsList == NULL)
 	{
-		return (-1);
+		return (0);
 	}
 	count = 0;
 	num = va_arg(argsList, unsigned int);
